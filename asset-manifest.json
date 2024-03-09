@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/YuukiEuphoria/react-user-fetch/static/css/main.4c3cdecd.css",
+    "main.js": "/YuukiEuphoria/react-user-fetch/static/js/main.5362e8a6.js",
+    "index.html": "/YuukiEuphoria/react-user-fetch/index.html",
+    "main.4c3cdecd.css.map": "/YuukiEuphoria/react-user-fetch/static/css/main.4c3cdecd.css.map",
+    "main.5362e8a6.js.map": "/YuukiEuphoria/react-user-fetch/static/js/main.5362e8a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c3cdecd.css",
+    "static/js/main.5362e8a6.js"
+  ]
+}
