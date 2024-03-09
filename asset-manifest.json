@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/YuukiEuphoria/react-user-fetch/static/css/main.4c3cdecd.css",
-    "main.js": "/YuukiEuphoria/react-user-fetch/static/js/main.5362e8a6.js",
-    "index.html": "/YuukiEuphoria/react-user-fetch/index.html",
-    "main.4c3cdecd.css.map": "/YuukiEuphoria/react-user-fetch/static/css/main.4c3cdecd.css.map",
-    "main.5362e8a6.js.map": "/YuukiEuphoria/react-user-fetch/static/js/main.5362e8a6.js.map"
+    "main.css": "/react-user-fetch/static/css/main.4c3cdecd.css",
+    "main.js": "/react-user-fetch/static/js/main.5362e8a6.js",
+    "index.html": "/react-user-fetch/index.html",
+    "main.4c3cdecd.css.map": "/react-user-fetch/static/css/main.4c3cdecd.css.map",
+    "main.5362e8a6.js.map": "/react-user-fetch/static/js/main.5362e8a6.js.map"
   },
   "entrypoints": [
     "static/css/main.4c3cdecd.css",
