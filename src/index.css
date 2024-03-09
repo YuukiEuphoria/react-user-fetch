@@ -32,7 +32,7 @@ p {
 }
 
 .sidebar__inner {
-  padding: 30px 50px ;
+  padding: 30px 50px;
 }
 
 .sidebar img {
@@ -67,7 +67,8 @@ p {
 
 .sidebar nav ul li.active {
   background-color: rgb(254, 175, 0);
-  margin: 4px;
+  margin: 4px 10px;
+  /* margin-left: 10px; */
 }
 
 .sidebar nav ul li:hover {
@@ -76,6 +77,7 @@ p {
 
 /* Стили для списка студентов */
 .students-list {
+  /* position: relative; */
   padding: 30px;
   padding-left: 100px;
   width: 100%;
@@ -93,7 +95,7 @@ p {
 
 .list {
   padding-bottom: 14px;
-  border-bottom: 1px solid rgb(229, 229, 229);;
+  border-bottom: 1px solid rgb(229, 229, 229);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,8 +106,22 @@ p {
   margin: 0;
 }
 
+.main-btns {
+  gap: 20px;
+  display: flex;
+}
+
+.main-btns button:hover {
+  background-color: rgb(161, 115, 16);
+}
+
+.list {
+  align-items: center;
+  display: flex;
+}
 
 .students-list button {
+  height: 44px;
   border: none;
   background-color: inherit;
   padding: 13px 26px;
@@ -118,6 +134,7 @@ p {
 .students-list table {
   width: 100%;
   margin-top: 20px;
+  position: relative;
 }
 
 .students-list table th,
@@ -134,7 +151,6 @@ p {
 .students-list table td:first-child {
   text-align: center;
   width: 65px;
-
 }
 
 tr.user {
@@ -144,4 +160,105 @@ tr.user {
 
 .user {
   padding: 14px;
+}
+
+.btns {
+  white-space: nowrap;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.modal form input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal form input:focus {
+  border-bottom: 2px solid #0074d9;
+}f
+
+.modal form.modal-btns {
+  display: flex;
+}
+
+.modal {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal form {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+.modal form h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.modal form input {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-btns button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-btns button[type="submit"] {
+  background-color: #74c1ed;
+  font-weight: 600;
+  color: #000;
+}
+
+.modal-btns button[type="button"] {
+  background-color: #ee95c5;
+  color: #000;
+}
+
+.loading-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.loading-spinner {
+  border: 6px solid rgba(0, 0, 0, 0.1); 
+  border-top: 6px solid #333; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg); 
+  }
 }

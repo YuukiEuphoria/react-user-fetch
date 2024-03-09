@@ -6,6 +6,6 @@ export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
     throw new Error('Ошибка при загрузке данных');
   }
   const data = await response.json();
-  await new Promise(resolve => setTimeout(resolve, 3500)); 
+  await new Promise(resolve => setTimeout(resolve, 3000)); 
   return data;
 });
