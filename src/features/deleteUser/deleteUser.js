@@ -1,11 +1,10 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
+import axios from "axios";
+import { createAsyncThunk } from "@reduxjs/toolkit";
 
-export const deleteUser = createAsyncThunk('users/deleteUser', async (userId) => {
-  const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`, {
-    method: 'DELETE',
-  });
-  if (!response.ok) {
-    throw new Error('Ошибка при удалении пользователя');
+export const deleteUser = createAsyncThunk(
+  "users/deleteUser",
+  async (userId) => {
+    await axios.delete(`http://localhost:3000/users/${userId}`);
+    return userId;
   }
-  return userId;
-});
+);

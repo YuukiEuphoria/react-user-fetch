@@ -1,11 +1,10 @@
+import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/users');
-  if (!response.ok) {
-    throw new Error('Ошибка при загрузке данных');
-  }
-  const data = await response.json();
-  await new Promise(resolve => setTimeout(resolve, 3000)); 
-  return data;
+  const response = await axios.get('http://localhost:3000/users');
+  await new Promise(resolve => setTimeout(resolve, 500)); 
+  return response.data;
 });
+
+//json-server --watch db.json -p 3000
